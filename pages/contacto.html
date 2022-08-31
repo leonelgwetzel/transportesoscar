@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!--Css-->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet"> 
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
+</head>
+<body id="bodyContact">
+    <!--NavBar-->
+    <header>
+        <nav id="navBar">
+            <div class="navBar__container">
+                <div class="navBar__logo">
+                    <img class="navBar__logo--img" src="../assets/img/logoblanco.png" alt="">
+                    <h2 class="navBar__logo--name">TRANSPORTES OSCAR</h2>
+                </div>
+                <ul class="navBar__menu">
+                    <li class="navBar__element">
+                        <a class="navBar__link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="navBar__element">
+                        <a class="navBar__link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="navBar__element">
+                        <a class="navBar__link" href="./galeria.html">Galeria</a>
+                    </li>
+                    <li class="navBar__element">
+                        <a class="navBar__link" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="navBar__element">
+                        <a class="navBar__link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Contact Form-->
+    <main id="contact">
+        <h1 class="form__title">✉ Contactenos</h1>
+        <form action="" class="form__container">
+            <div class="form__group1">
+                <p class="form__text">Nombre</p>
+                <input type="text" name="nombre">
+            </div>
+            <div class="form__group2">
+                <p class="form__text">Apellido</p>
+                <input type="text" name="apellido">
+            </div>
+            <div class="form__group3">
+                <p class="form__text">Email</p>
+                <input type="email" name="email">
+            </div>
+            <div class="form__group4">
+                <p class="form__text">Tel/Cel</p>
+                <input type="text" name="cel">
+            </div>
+            <div class="form__group5">
+                <p class="form__text">Consulta:</p>
+                <textarea name="consulta" id="consulta" cols="17" rows=9"></textarea>
+            </div>
+            <div class="form__group6">
+                <button class="form__buttons" type="submit">Enviar consulta</button>
+            </div>
+        </form>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footer__container--icons">
+            <a class="footer__link" href="https://www.instagram.com/transportesoscar/">
+                <img class="footer__img" src="../assets/icons/instagram.png" alt="">
+            </a>
+            <a class="footer__link" href="https://www.instagram.com/transportesoscar/">
+                <img class="footer__img" src="../assets/icons/whatsapp.png" alt="">
+            </a>
+        </div>
+        <div class="footer__container--copy">
+            <p class="footer__text">© 2022 - Transportes Oscar</p>
+        </div>
+    </footer>
+</body>
+</html>
