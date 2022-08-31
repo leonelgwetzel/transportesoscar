@@ -62,6 +62,9 @@
         height: 50px;
         padding-right: 5px;
     }
+    .navBar__link:hover{
+        color: rgba(243, 146, 0);   
+    }
         /*Navbar IPAD*/
         @media screen and (min-width: 768px){
             .navBar__logo--name{
@@ -136,6 +139,9 @@
         background-color: rgba(243, 146, 0,0.7);
         border: 0;
         border-radius: 2px;
+    }
+    .hero__button:hover{
+        background-color: rgba(243, 146, 0, 1);
     }
     .hero__link{
         text-decoration: none;
@@ -386,7 +392,8 @@
             width: 100%;
         }
     #bodyServices{
-        background-color: #000;
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(50,49,49,1) 100%);
     }
     .services__title{
         margin-top: 125px;
@@ -410,11 +417,15 @@
         padding-top: 40px;
     }
     .services_galleryButton{
-        background-color: rgba(243, 146, 0,1);
+        background-color: rgba(243, 146, 1, 0.8);
         padding: 10px;
         border-radius: 5px;
         border: 0;
     }
+    .services_galleryButton:hover{
+        background-color: rgba(243, 146, 1, 1);
+    }
+    
     .services__galleryLink{
         text-decoration: none;
         color: #fff;
@@ -475,10 +486,13 @@
     }
     .form__buttons{
         padding: 15px;
-        background-color: rgba(243, 146, 0);
+        background-color: rgba(243, 146, 0, 0.8);
         border: 0;
         border-radius: 5px;
         margin-bottom: 15px;
+    }
+    .form__buttons:hover{
+        background-color: rgba(243, 146, 0, 1);
     }
     .form__text{
         color: gray;
