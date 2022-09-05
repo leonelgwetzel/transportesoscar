@@ -1,0 +1,57 @@
+/*Common styles*/
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');   
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    #navbar{
+        background-color: #000;
+    }
+    #navbar a:hover{
+        color: rgba(243, 146, 0);
+    }
+    footer{
+        background-color: rgba(243, 146, 0);
+    }
+    footer i:hover, footer a:hover{
+        color: rgba(243, 146, 0) !important;
+    }
+
+/*Index*/
+    #bodyIndex{
+        background-color: #000;
+    }
+    #indexHero{
+        background-image: url('../assets/img/aaa.jpg');
+        height: 100vh;
+    }
+    .indexHero__caption {
+        border: 1px solid #fff;
+    }
+    .indexHero__caption a {
+    font-size: 15px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    }
+    .indexHero__caption a:hover {
+        font-size: 15px;
+        border: 1px solid rgba(243, 146, 0);
+        background-color: rgba(243, 146, 0);
+        color: #fff;
+    }
+    .indexHero__caption h5{
+        color:rgba(148, 148, 148, 0.7);
+        font-weight: 200;
+    }
+    #customers{
+        background-color: #000;
+    }
+    #customers i{
+        color: rgba(243, 146, 0);
+    }
+    .customers__logo{
+       height: 80px;
+    }
+    .customers__logo--rectangle{
+        height: 80px;
+    }
