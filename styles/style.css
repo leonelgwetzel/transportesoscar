@@ -1,13 +1,24 @@
 /*Common styles*/
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');   
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+    *{
+        overflow-x: hidden;
+    }
     body{
         font-family: 'Roboto', sans-serif;
+        width: 100vw !important;
+
     }
     #navbar{
         background-color: #000;
     }
     #navbar a:hover{
         color: rgba(243, 146, 0);
+    }
+    #navbar .navbar-brand{
+        font-size: 15px;
+    }
+    .nav-link{
+        font-size: 15px;
     }
     footer{
         background-color: rgba(243, 146, 0);
@@ -23,6 +34,8 @@
     #indexHero{
         background-image: url('../assets/img/aaa.jpg');
         height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .indexHero__caption {
         border: 1px solid #fff;
@@ -54,4 +67,68 @@
     }
     .customers__logo--rectangle{
         height: 80px;
+    }
+/*Services*/
+    #servicesMain{
+        background-color: #000;
+    }
+    #servicesMain i{
+        color: rgba(243, 146, 0);
+    }
+    .services__title{
+        color: #fff;
+    }
+    .services__item{
+        color: #fff;
+        padding-top: 25px;
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .services__btn, .contact__btn{
+        font-size: 16px;
+    }
+    .services__btn:hover, .contact__btn:hover{
+        border: 1px solid rgba(243, 146, 0);
+        background-color: rgba(243, 146, 0);
+        color: #fff;
+    }
+    .services__title--separator{
+        color: rgba(243, 146, 0);
+    }
+
+/*Gallery*/
+    #bodyGallery{
+        background-color: #000;
+    }
+    #gallery .row{
+        margin-top: 120px;
+    }
+
+/*About*/
+    #aboutBody{
+        background-color: #000;
+    }
+    #about i{
+        color: rgba(243, 146, 0);
+    }
+    .about__title{
+        color: #fff;
+    }
+    .about__img{
+        border: 1px solid #fff;
+    }
+    .about__text{
+        color: #fff;
+        line-height: 30px;
+        font-size: 18px;
+    }
+/*Contact*/
+    #bodyContact{
+        background-color: #000;
+    }
+    .form__title{
+        color: #fff;
+    }
+    #contact i{
+        color: rgba(243, 146, 0);
     }

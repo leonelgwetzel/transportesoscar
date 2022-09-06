@@ -5,74 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La empresa</title>
-    <!--Css-->
-    <link rel="stylesheet" href="../styles/styles.css">
-    <!--Fuentes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet"> 
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
+    <!--Css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body id="aboutBody">
-    <!--NavBar-->
+    <!--Navbar-->
     <header>
-        <nav id="navBar">
-            <div class="navBar__container">
-                <div class="navBar__logo">
-                    <img class="navBar__logo--img" src="../assets/img/logoblanco.png" alt="">
-                    <h2 class="navBar__logo--name">TRANSPORTES OSCAR</h2>
-                </div>
-                <img class="navBar__menu--mobileIcon" src="../assets/icons/menu.png" alt="">
-                <ul class="navBar__menu">
-                    <li class="navBar__element">
-                        <a class="navBar__link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="navBar__element">
-                        <a class="navBar__link" href="./nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="navBar__element">
-                        <a class="navBar__link" href="./galeria.html">Galeria</a>
-                    </li>
-                    <li class="navBar__element">
-                        <a class="navBar__link" href="./servicios.html">Servicios</a>
-                    </li>
-                    <li class="navBar__element">
-                        <a class="navBar__link" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand d-flex flex-row align-items-center" href="./index.html">
+                <img src="../assets/img/logoblanco.png" width="70" height="70" class="d-inline-block align-top me-2" alt="">
+                TRANSPORTES OSCAR
+            </a>
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ms-auto px-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+              </ul>
             </div>
         </nav>
     </header>
     <!--About-->
-    <main id="about">
-        <h1 class="about__title">Nuestra historia</h1>
-        <br>
-        <div class="about__container">
-            <div class="about__container--img">
-                <img class="about__img" src="../assets/img/camion.png" alt="">
-            </div>
-            <div class="about_container--text">
-                <p class="about__text">
-                    Somos una empresa familiar fundada en el año 1988, con una trayectoria de mas de 30 años en el rubro del transporte y movimiento de maquinarias.
-Ofrecemos calidad y profesionalismo en nuestro trabajo con el fin de brindarles a nuestros clientes tranquilidad y satisfacción ya que contamos contamos con las herramientas y el personal adecuado para realizar el trabajo.
-                </p>
+    <main id="about" class="container-fluid mt-5 pt-5">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="about__title text-center mt-5"><i class="fa-solid fa-timeline"></i> Nuestra historia</h1>
+                <i class="fa-solid fa-window-minimize display-3"></i>
             </div>
         </div>
-
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6  d-flex justify-content-center">
+                    <img class="about__img img-fluid w-75 rounded" src="../assets/img/camion.png" alt="">
+                </div>
+                <div class="col-sm-12 col-lg-6 ">
+                    <p class="about__text">
+                        Somos una empresa familiar fundada en el año 1988, con una trayectoria de mas de 30 años en el rubro del transporte y movimiento de maquinarias.
+                        Ofrecemos calidad y profesionalismo en nuestro trabajo con el fin de brindarles a nuestros clientes tranquilidad y satisfacción ya que contamos contamos con las herramientas y el personal adecuado para realizar el trabajo.
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
     <!--Footer-->
-    <footer>
-        <div class="footer__container--icons">
-            <a class="footer__link" href="https://www.instagram.com/transportesoscar/">
-                <img class="footer__img" src="../assets/icons/instagram.png" alt="">
-            </a>
-            <a class="footer__link" href="https://www.instagram.com/transportesoscar/">
-                <img class="footer__img" src="../assets/icons/whatsapp.png" alt="">
-            </a>
-        </div>
-        <div class="footer__container--copy">
-            <p class="footer__text">© 2022 - Transportes Oscar</p>
-        </div>
+    <footer class="text-center text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,224L60,208C120,192,240,160,360,144C480,128,600,128,720,154.7C840,181,960,235,1080,224C1200,213,1320,139,1380,101.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+        <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <!-- Whatsapp -->
+          <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://wa.me/message/PLM7BNIFDD5ZO1" role="button">
+            <i class="fa fa-whatsapp display-6" aria-hidden="true"></i>
+          </a>
+          <!-- Instagram -->
+          <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/transportesoscar/" role="button">
+            <i class="fa-brands fa-instagram display-6"></i>
+          </a>
+          <!-- Mail -->
+          <a class="btn btn-outline-light btn-floating m-1" href="mailto:info@transportesoscar.com" role="button">
+            <i class="fa-solid fa-envelope display-6"></i>
+          </a>
+        </section>
+      </div>    
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-white" href="https://transportesoscar.com/">Transportes Oscar</a>
+      </div>
     </footer>
+    <!--Js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/830d610cc9.js" crossorigin="anonymous"></script>
 </body>
 </html>
