@@ -1,6 +1,15 @@
-$color-to: #f39200;
-$white: #fff;
-$black: #000;
+//Map
+
+$colors : (
+    to : #f39200,
+    white : #fff,
+    black : #000
+);
+
+@mixin mixinFooter{
+    background-color: map-get($colors, to);
+    color:  map-get($colors, white);
+}
 
 /*Common*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
@@ -13,10 +22,10 @@ body{
 
 }
 #navbar{
-    background-color: $black;
+    background-color: map-get($colors, black);
 
     a:hover{
-        color: $color-to;
+        color: map-get($colors, to);
     }
     
     .navbar-brand, .nav-link{
@@ -24,16 +33,16 @@ body{
     }
 }
 footer{
-    background-color: $color-to;
+    background-color: map-get($colors, to);
     
     i:hover, a:hover{
-        color: $color-to !important;
+        color: map-get($colors, to) !important;
     }
 }
 
 /*Index*/
 #bodyIndex{
-    background-color: $black;
+    background-color: map-get($colors, black);
 
     /*Hero*/
     #indexHero{
@@ -43,7 +52,7 @@ footer{
         background-size: cover;
 
         .indexHero__caption{
-            border: 1px solid $white;
+            border: 1px solid map-get($colors, white);
             animation-name: fromRight;
             animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
             animation-delay: 0.14s;
@@ -52,14 +61,14 @@ footer{
 
             a{
                 font-size: 15px;
-                border: 1px solid $white;
-                color: $white;
+                border: 1px solid map-get($colors, white);
+                color: map-get($colors, white);
                 font-weight: 200;
             }
             a:hover{
-                border: 1px solid $color-to;
-                background-color: $color-to;
-                color: $white;
+                border: 1px solid map-get($colors, to);
+                background-color: map-get($colors, to);
+                color: map-get($colors, white);
             }
             h5{
                 color: rgba(148, 148, 148, 0.7);
@@ -69,10 +78,10 @@ footer{
     }
     /*Customers*/
     #customers{ 
-        background-color: $black;
+        background-color: map-get($colors, black);
 
         i{
-            color: $color-to;
+            color: map-get($colors, to);
         }
 
         .customers__logo, .customers__logo--rectangle{
@@ -85,18 +94,18 @@ footer{
 
 /*Services*/
 #servicesMain{
-        background-color: $black;
+        background-color: map-get($colors, black);
 
         i{
-            color: $color-to;
+            color: map-get($colors, to);
         }
 
         .services__title{
-            color: $white;
+            color: map-get($colors, white);
         }
 
         .services__item{
-            color: $white;
+            @extend .services__title;
             padding-top: 25px;
             font-size: 20px;
             font-weight: 200;
@@ -107,19 +116,19 @@ footer{
         }
 
         .services__btn:hover, .contact__btn:hover{
-            border: 1px solid $color-to;
-            background-color: $color-to;
-            color: $white;
+            border: 1px solid map-get($colors, to);
+            background-color: map-get($colors, to);
+            color: map-get($colors, white);
         }
         
         .services__title--separator{
-            color: $color-to;
+            color: map-get($colors, to);
         }
 }
 
 /*Gallery*/
 #bodyGallery{
-        background-color: $black;
+        background-color: map-get($colors, black);
 
         #gallery row{
             margin-top: 120px;
@@ -132,37 +141,44 @@ footer{
 
 /*About*/
 #aboutBody{
-        background-color: $black;
+        background-color: map-get($colors, black);
 
         i{
-            color: $color-to;
+            color: map-get($colors, to);
         }
 
         .about__title{
-            color: $white;
+            color: map-get($colors, white);
         }
 
         .about__img{
-            border: 1px solid $white;
+            border: 1px solid map-get($colors, white);
         }
 
         .about__text{
-            color: $white;
+            color: map-get($colors, white);
             line-height: 30px;
             font-size: 18px;
+        }
+        footer{
+            @include mixinFooter;
+
+        }
+        footer i{
+            color: map-get($colors, white);
         }
 }
 
 /*Contact*/
 #bodyContact{
-        background-color: $black;
+        background-color: map-get($colors, black);
 
         .form__title{
-            color: $white;
+            color: map-get($colors, white);
         }
 
         #contact i{
-            color: $color-to;
+            color: map-get($colors, to);
         }
 }
 

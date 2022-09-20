@@ -60,10 +60,9 @@ footer {
   background-color: #000; }
   #servicesMain i {
     color: #f39200; }
-  #servicesMain .services__title {
+  #servicesMain .services__title, #servicesMain .services__item {
     color: #fff; }
   #servicesMain .services__item {
-    color: #fff;
     padding-top: 25px;
     font-size: 20px;
     font-weight: 200; }
@@ -97,6 +96,11 @@ footer {
     color: #fff;
     line-height: 30px;
     font-size: 18px; }
+  #aboutBody footer {
+    background-color: #f39200;
+    color: #fff; }
+  #aboutBody footer i {
+    color: #fff; }
 
 /*Contact*/
 #bodyContact {
